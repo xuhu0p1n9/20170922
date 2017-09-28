@@ -1,0 +1,17 @@
+//一:在DOM元素中直接绑定  onXXX="javascriptCode"
+//单击按钮弹出警告框有两种写法
+
+
+//1.原生函数 
+<input  onclick="alert('谢谢支持')"  type="button"  value="点击我，弹出警告框" />  
+
+
+//2.自定义函数
+<input  onclick="myAlert()"  type="button"  value="点击我，弹出警告框" />  
+<script>  
+  function myAlert(){  
+     alert("谢谢支持");  
+  }  
+</script> 
+//三:绑定事件监听函数
+绑定事件的另一种方法是用 addEventListener() 或 attachEvent() 来绑定事件监听函数。
